@@ -8,10 +8,10 @@ class Review extends Component {
     return (
       <div>
         <li>
-          {review.text}
+        {review.text}
         </li>
-        <button> X </button>
-      </div>
+        <button onClick={() => this.props.delete(review.id)}> X </button>      
+        </div>
     );
   }
 
